@@ -12,7 +12,8 @@ import lombok.*;
 public class Product {
     private Integer id;
     private String name;
-    private double cost;
+    private Integer cost;
+
 
     @Override
     public boolean equals(Object o) {

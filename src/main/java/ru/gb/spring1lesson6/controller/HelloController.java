@@ -15,7 +15,6 @@ public class HelloController {
 
     private final ProductProps productProps;
 
-
     @ResponseBody
     @GetMapping
     public String helloMessage (){
@@ -26,7 +25,7 @@ public class HelloController {
     @GetMapping("/hello")
     public String helloMessageJsp (Model model){
         model.addAttribute("msg","Count of products:" + productProps.getProducts().size());
-        return "message";
+        return "product";
     }
 
 
